@@ -33,7 +33,7 @@ python -m venv fastenv
 pip install -r requirements.txt
 
 # Run the Python API
-uvicorn main:app 0.0.0.0:8000 --reload
+uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 Note: Valid OpenAI API key needs to be added to the ```.env``` file in order to be able to run the python script.
